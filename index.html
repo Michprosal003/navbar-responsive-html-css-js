@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!----------------Link de Iconos de Font-awesome------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-------------------CSS-------------------->
+    <link rel="stylesheet" href="style.css">
+
+
+    <!----------------------Link de Javascript ------------------------>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+    <title>Diseño Web Responsivo -Introduccion</title>
+</head>
+<body>
+
+
+    <!---------Barra de Navigacion------------>
+     <nav class="barra-navigacion">
+
+     <!--------Ancho Maximo-------------------->
+     <div class="max-width">
+      
+    <!---------Logo----------------------------->
+
+    <div class="logo"><a href="#">Portofo<span>lio</span></a></div>
+
+
+    <!------- Lista desordenada------------------>
+    <ul class="menu">
+<li><a href="#inicio">Inicio</a></li>
+<li><a href="#Sobre">Sobre</a></li>
+<li><a href="#Servicios">Servicios</a></li>
+<li><a href="#Portofolio">Portofolio</a></li>
+<li><a href="#Contacto">Contacto</a></li>
+
+    </ul>
+
+
+<!------------- Boton Menu------------------------->
+<div class="boton-menu">
+<i class="fa fa-bars"></i>
+
+</div>
+     </div>
+     </nav> 
+</body>
+</html>
+
+
+<!--------JAVASCRIPT------------------------------>
+
+<script>
+
+$(document).ready(function()
+{
+    $('.boton-menu').click(function()
+    {
+
+    $('.barra-navigacion .menu').toggleClass("active");
+    $('.boton-menu i').toggleClass("active");
+    });
+});
+
+
+
+</script>
